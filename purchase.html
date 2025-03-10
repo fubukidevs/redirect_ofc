@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compra Confirmada</title>
+  <title>Redirecionamento</title>
   <!-- Meta Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s) 
@@ -15,289 +15,38 @@
     s.parentNode.insertBefore(t,s)}(window, document,'script', 
     'https://connect.facebook.net/en_US/fbevents.js'); 
     fbq('init', '1267256801633511'); 
-    fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none" 
     src="https://www.facebook.com/tr?id=1267256801633511&ev=PageView&noscript=1" 
   /></noscript>
   <!-- End Meta Pixel Code -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-    
-    :root {
-      --primary: #4CAF50;
-      --primary-dark: #388E3C;
-      --primary-light: #A5D6A7;
-      --secondary: #2196F3;
-      --text-primary: #333;
-      --text-secondary: #666;
-      --background: #f9f9f9;
-      --card-bg: #ffffff;
-      --success: #00c853;
-    }
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: var(--background);
-      background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
-    
-    .container {
-      width: 100%;
-      max-width: 480px;
-      background: var(--card-bg);
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      padding: 40px 30px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .container:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 6px;
-      background: linear-gradient(90deg, var(--primary), var(--secondary));
-    }
-    
-    .success-icon {
-      width: 80px;
-      height: 80px;
-      background: var(--primary-light);
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto 24px;
-      position: relative;
-    }
-    
-    .success-icon:before {
-      content: "";
-      width: 30px;
-      height: 15px;
-      border-left: 4px solid white;
-      border-bottom: 4px solid white;
-      transform: rotate(-45deg);
-      position: relative;
-      top: -2px;
-    }
-    
-    h1 {
-      color: var(--success);
-      font-size: 28px;
-      font-weight: 700;
-      margin-bottom: 16px;
-      position: relative;
-      display: inline-block;
-    }
-    
-    h1:after {
-      content: '';
-      position: absolute;
-      width: 40%;
-      height: 3px;
-      background: var(--primary);
-      left: 30%;
-      bottom: -8px;
-      border-radius: 2px;
-    }
-    
-    p {
-      color: var(--text-secondary);
-      margin: 16px 0;
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    
-    .highlight {
-      color: var(--primary-dark);
-      font-weight: 500;
-    }
-    
-    .loading-bar {
-      width: 100%;
-      height: 6px;
-      background: #f0f0f0;
-      border-radius: 3px;
-      margin: 30px 0;
-      overflow: hidden;
-      position: relative;
-    }
-    
-    .loading-bar:before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, var(--primary), var(--secondary), var(--primary));
-      background-size: 200% 100%;
-      animation: loading 2s linear infinite;
-    }
-    
-    @keyframes loading {
-      0% { background-position: 100% 0; }
-      100% { background-position: -100% 0; }
-    }
-    
-    #redirect-message {
-      font-size: 14px;
-      color: var(--text-secondary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-    }
-    
-    #countdown {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      width: 28px;
-      height: 28px;
-      background: var(--primary);
-      color: white;
-      border-radius: 50%;
-      font-weight: 600;
-    }
-    
-    .telegram-info {
-      margin-top: 24px;
-      background: rgba(76, 175, 80, 0.08);
-      padding: 16px;
-      border-radius: 8px;
-    }
-    
-    .telegram-icon {
-      margin-bottom: 10px;
-      font-size: 24px;
-      color: #0088cc;
-    }
-    
-    .pulse {
-      animation: pulse 2s infinite;
-    }
-    
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-    
-    /* Responsividade */
-    @media (max-width: 480px) {
-      .container {
-        padding: 30px 20px;
-      }
-      
-      h1 {
-        font-size: 24px;
-      }
-      
-      .success-icon {
-        width: 70px;
-        height: 70px;
-      }
-    }
-  </style>
 </head>
 <body>
-  <div class="container">
-    <div class="success-icon pulse"></div>
-    <h1>Compra Confirmada!</h1>
-    <p>Seu acesso <span class="highlight">VIP</span> foi processado com sucesso. Estamos preparando tudo para você.</p>
-    
-    <div class="loading-bar"></div>
-    
-    <div class="telegram-info">
-      <div class="telegram-icon">📱</div>
-      <p>Você será redirecionado para o canal exclusivo no Telegram em instantes.</p>
-    </div>
-    
-    <p id="redirect-message">Redirecionando em <span id="countdown">5</span></p>
-  </div>
-
   <script>
-    // Função para registrar eventos do Facebook Pixel de forma confiável
-    function trackFacebookEvent(eventName, eventData) {
-      return new Promise((resolve) => {
-        // Verificar se o fbq está disponível
-        if (typeof fbq !== 'function') {
-          console.error('Facebook Pixel não está disponível');
-          resolve(false);
-          return;
-        }
+    // Checar se o evento "Initiate Checkout" já foi registrado no localStorage
+    const hasTrackedCheckout = localStorage.getItem('hasTrackedCheckout');
 
-        // Definir um timeout para garantir que não ficamos presos esperando
-        const timeoutId = setTimeout(() => {
-          console.warn('Timeout ao registrar evento ' + eventName);
-          resolve(false);
-        }, 2000);
+    if (!hasTrackedCheckout) {
+      // Registrar o evento Initiate Checkout no Meta Pixel
+      fbq('track', 'InitiateCheckout', {value: '19.99', currency: 'BRL'});
 
-        // Registrar o evento
-        try {
-          fbq('track', eventName, eventData);
-          
-          // Limpar o timeout e resolver a promise
-          clearTimeout(timeoutId);
-          console.log('Evento ' + eventName + ' registrado com sucesso');
-          resolve(true);
-        } catch (error) {
-          console.error('Erro ao registrar evento ' + eventName, error);
-          clearTimeout(timeoutId);
-          resolve(false);
-        }
-      });
+      // Marcar no localStorage que o evento foi registrado
+      localStorage.setItem('hasTrackedCheckout', 'true');
+    }  
+  
+    // Checar se o evento "Purchase" já foi registrado no localStorage
+    const hasTrackedPurchase = localStorage.getItem('hasTrackedPurchase');
+
+    if (!hasTrackedPurchase) {
+      // Registrar o evento de compra no Meta Pixel
+      fbq('track', 'Purchase', {value: '19.99', currency: 'BRL'});
+
+      // Marcar no localStorage que o evento foi registrado
+      localStorage.setItem('hasTrackedPurchase', 'true');
     }
 
-    // Registrar eventos e redirecionar
-    async function processAndRedirect() {
-      // Registrar o evento InitiateCheckout
-      await trackFacebookEvent('InitiateCheckout', {
-        value: '19.99', 
-        currency: 'BRL'
-      });
-
-      // Registrar o evento Purchase
-      await trackFacebookEvent('Purchase', {
-        value: '19.99', 
-        currency: 'BRL',
-        transaction_id: 'TRANS_' + new Date().getTime() // ID único para cada transação
-      });
-
-      // Iniciar contagem regressiva
-      let secondsLeft = 5;
-      const countdownElement = document.getElementById('countdown');
-      
-      const countdownInterval = setInterval(() => {
-        secondsLeft--;
-        countdownElement.textContent = secondsLeft;
-        
-        if (secondsLeft <= 0) {
-          clearInterval(countdownInterval);
-          // Redirecionar para o canal VIP
-          window.location.href = "https://t.me/+uCZMw4Xz32JiZTlh";
-        }
-      }, 1000);
-    }
-
-    // Iniciar o processo quando a página carregar completamente
-    window.addEventListener('load', processAndRedirect);
+    // Redirecionar para o canal VIP
+    window.location.href = "https://t.me/+uCZMw4Xz32JiZTlh"; // Aqui voce coloca seu grupo link vip
   </script>
 </body>
 </html>
